@@ -16,22 +16,9 @@ Write a Scheme program that implements the following functions:
 - `(process-square point1 point2 point3 point4)`. This function takes in four points, it will check if these points form a square, if they do, then it calculates the length of the side, the area and perimeter of the square. If it is not a square, just output a message indicating the points don't form a square.
 - `(process-triangle point1 point2 point3)`. This function takes in three points, it will check if these points form a triangle, if they do, then it calculates the perimeter, area and interior angles of the triangle formed by the three points. If it is not a triangle, just output a message indicating the points don't form a triangle.
   
-## Assignment Requirements
-- Good programming practices
-- Correct and readable indentation
-- This is a strictly individual assignment
 
 ## Delivery Method
-You will push your final version to the repository of the assignment before the deadline, your program must be in a file named `fourpoints.scm`  **[You MUST name your program this, failure will result in zero grade]**
-
-## Assessment and Grading
-Assessment will consider the following factors in the grading of the project:
--	Adherence to instructions
--	Correct function of the program
--	No runtime errors
--	Late deliveries will have a zero mark
--	Plagiarism will have a double zero mark (in addition to losing 10% of your final grade, the group that plagiarizes will lose an additional 10% of their final grade), besides there will be a report filed in the students’ academic record.
--	Each program will be loaded in Scheme and tested to check if the functions are in working order.
+your program must be in a file named `fourpoints.scm`  
 
 ## Sample Output
 ```
@@ -124,7 +111,7 @@ A file named `test.scm` is provided. You will need to append this file to the en
 
 ***You may need to press the y key to indicate that you want to quit***.
 
-The command tells Scheme to run the file `full.scm`. Once the process is finished, there will be a file named `your-output.txt` you can then compare this file with another file that is provided: `output.txt` to check if your results are correct. Before turning in your assignment make sure that your file `fourpoints.cpp` does not have test code.
+The command tells Scheme to run the file `full.scm`. Once the process is finished, there will be a file named `your-output.txt` you can then compare this file with another file that is provided: `output.txt` to check if your results are correct. This is just for testing, in the end make sure that your file `fourpoints.cpp` does not have test code.
 
 ### Steps
 1. Copy your `fourpoints.scm` file into a new empty file called `full.scm`
@@ -159,24 +146,4 @@ Steps to integrate the parser made in Rust:
 1. Paste your generated test to your scheme program: `cat threepoints.scm mytest.scm > full.scm`
 1. Run your program to check the test made with those four (or more) points in `test.cpl` represent: `scheme --load full.scm`
 
-## Grading
 
-The grading is done in phases:
-1. A test file is going to be appended to your code to check each of the requested functions. There will be no partial credit if the program doesn't run. Each of those tests will have partial credits, see below for details. The program should not crash, if it does, there will be a deduction of up to 20 points. 
-2. Your code is going to be reviewed to check for good programming practices. For **each** programming practice infraction you may lose up to 5 points.
-3. Your code is going to be processed to check originality. If your code is not original, then the rules of academic integrity will be applied.
-
-Function | Partial Credit
---------|-----------
-`(make-point x-cor y-cor)` | 5
-`(is-line point1 point2 point3)` | 10
-`(distance point1 point2)` | 5
-`(triangle-perimeter point1 point2 point3)` | 10
-`(triangle-area point1 point2 point3)` | 10
-`(is-square point1 point2 point3 point4)` | 10
-`(square-perimeter point1 point2 point3 point4)` | 10
-`(square-area point1 point2 point3 point4)` | 10
-`(process-square point1 point2 point3 point4)` | 15
-`(process-triangle point1 point2 point3)` | 15
-
-**Note:** Check out the sample output and test provided to see the likely test cases that your code is going to be graded on.
